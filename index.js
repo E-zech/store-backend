@@ -15,7 +15,7 @@ import dotenv from 'dotenv';
 // test
 // Environment setup
 const env = dotenv.config({ path: './prod.env' }); // for mongoDb Atlas use path: './prod.env'
-const port = env.parsed.PORT || 5000;
+const port = process.env.PORT || 5000;
 
 // MongoDB Connection
 async function main() {
