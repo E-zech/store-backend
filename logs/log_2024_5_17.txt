@@ -1,0 +1,12 @@
+Time: 2024-05-17T08:13:18.426Z
+Method: GET
+Route: /cart
+Status Code: 401
+Error:  Unauthorized
+
+Time: 2024-05-17T08:14:38.166Z
+Method: GET
+Route: /products/my-faves-products
+Status Code: 404
+Error:  Not Found
+

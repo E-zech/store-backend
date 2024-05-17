@@ -1,0 +1,49 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: rgba(196, 215, 255, 0.774);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+h1 {
+    color: #190a50;
+    text-align: center;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 3s forwards, fallDownH1 0.2s 3s forwards, shakeH1 0.5s 3.2s forwards, resetH1 1s 6.5s forwards, scaleUpH1 1.5s 7s forwards;
+}
+
+.fallDownD {
+    display: inline-block;
+    transform: translateY(0);
+    animation: fallDownD 1s 4s forwards, bringBackD 0.3s 6s forwards;
+}
+
+.number {
+    color: #190a50;
+    font-size: 4rem;
+    animation: rotate 3s forwards;
+    transform-origin: center;
+    font-weight: bold;
+}
+
+.one {
+    animation-delay: 0.2s;
+}    
+
+.two {
+    animation-delay: 0.4s;
+}    
+
+.three {
+    animation-delay: 0.6s;
+}   

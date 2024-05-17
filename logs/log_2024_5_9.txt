@@ -1,0 +1,30 @@
+Time: 2024-05-09T07:57:20.410Z
+Method: GET
+Route: /users/6630aadd939a637e0791e43b
+Status Code: 401
+Error:  Unauthorized
+
+Time: 2024-05-09T07:57:20.439Z
+Method: GET
+Route: /cart
+Status Code: 401
+Error:  Unauthorized
+
+Time: 2024-05-09T07:57:20.989Z
+Method: GET
+Route: /cart
+Status Code: 401
+Error:  Unauthorized
+
+Time: 2024-05-09T07:58:05.985Z
+Method: GET
+Route: /products/my-faves-products
+Status Code: 404
+Error:  Not Found
+
+Time: 2024-05-09T07:59:25.119Z
+Method: GET
+Route: /products/my-faves-products
+Status Code: 404
+Error:  Not Found
+
