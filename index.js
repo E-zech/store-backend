@@ -14,17 +14,20 @@ import ordersRoutes from './routes/ordersRoutes.js';
 import dotenv from 'dotenv';
 // test
 // Environment setup
-const env = dotenv.config({ path: './prod.env' }); // for mongoDb Atlas use path: './prod.env'
+// const env = dotenv.config({ path: './prod.env' }); // for mongoDb Atlas use path: './prod.env'
 const port = process.env.PORT || 5000;
 
 // MongoDB Connection
 async function main() {
     try {
-        await mongoose.connect(env.parsed.REMOTE_URL);
+        const remoteUrl = process.env.REMOTE_URL;
+        if (!remoteUrl) {
+            throw new Error('REMOTE_URL environment variable not set');
+        }
+        await mongoose.connect(remoteUrl, { useNewUrlParser: true, useUnifiedTopology: true });
         console.log(chalk.green(`mongodb connection established on port : ${chalk.bgGreen('27017')}`));
         await initialDataStart();
-    }
-    catch (err) {
+    } catch (err) {
         console.error(chalk.bgRed(err));
     }
 }
