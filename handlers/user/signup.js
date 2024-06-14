@@ -30,7 +30,7 @@ const signup = app => {
 
             await newUser.save();
 
-            res.send(newUser);
+            res.send('You have successfully signed up');
 
         } catch (err) {
 
