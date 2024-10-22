@@ -300,7 +300,7 @@ export const products = [
         "Ingredients": "Shea Butter, Vitamin E, Coconut Oil, Almond Oil, Aloe Vera",
         "price": 29.99,
         "discount": 4.99,
-        "imgUrl": "https://yofeely.com/cdn/shop/files/100--32535052517527.jpg?v=1695416503",
+        "imgUrl": "https://raunsborg.com/wp-content/uploads/2024/07/web-nordic-50ml.png",
         "imgAlt": "a photo of Hand Cream",
         "category": "Hands",
         "faves": [],
