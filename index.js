@@ -12,7 +12,7 @@ import productRoutes from './routes/productRoutes.js';
 import cardRoutes from './routes/cartRoutes.js';
 import ordersRoutes from './routes/ordersRoutes.js';
 import dotenv from 'dotenv';
-// test
+
 // Environment setup
 // const env = dotenv.config({ path: './prod.env' }); // for mongoDb Atlas use path: './prod.env'
 const port = process.env.PORT || 5000;
